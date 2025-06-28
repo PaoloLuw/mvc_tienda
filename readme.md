@@ -38,7 +38,7 @@ Aplicación web para registrar y listar productos (nombre, categoría, precio) i
 
 ## Ejecución
 
-1. Navega al directorio del proyecto:
+1. Navega al directorio del proyecto donde lo clonaste y ejecutarlo desde alli (ejemplo):
 
    ```bash
    cd D:\Sly_Codes\Sly_Python\mvc_tienda
@@ -76,10 +76,3 @@ Audífonos,Accesorios,29.99
 - Asegúrate de que `productos.csv` tenga permisos de escritura.
 - El diseño es responsivo y usa la tipografía Inter (Google Fonts).
 
-## Autor
-
-# \[Tu Nombre Completo\]\\
-
-## Código: \[Tu Código\]\\
-
-### Fecha: 28 de junio de 2025
