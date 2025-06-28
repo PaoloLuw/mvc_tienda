@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Producto</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="POST" action="{{ url_for('procesar_agregar') }}">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Laptop" required>
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria" placeholder="Ej. Electrónica" required>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" placeholder="Ej. 999.99" required>
+            <input type="submit" value="Agregar Producto">
+        </form>
+        <a class="back-link" href="{{ url_for('index') }}">Volver al Menú</a>
+    </div>
+</body>
+</html>
